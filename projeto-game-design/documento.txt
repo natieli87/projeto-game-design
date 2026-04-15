@@ -1,0 +1,54 @@
+1. Visão Geral
+**Tromb Raider** é um jogo de aventura e exploração (estilo plataforma ou RPG de ação) onde o protagonista deve navegar por ambientes perigosos, resolver quebra-cabeças e coletar artefatos históricos. O diferencial do jogo reside na mecânica de "trombadas" ou colisões estratégicas para interagir com o cenário e derrotar inimigos.
+
+* **Objetivo:** Proporcionar uma experiência divertida de exploração com foco em física e agilidade.
+* **Público-alvo:** Jogadores casuais e entusiastas de jogos de aventura/plataforma.
+* **Plataforma:** PC e Mobile.
+
+---
+
+## 2. Requisitos Funcionais (RF)
+Os requisitos funcionais descrevem o que o sistema deve fazer.
+
+| ID | Descrição |
+| :--- | :--- |
+| **RF01** | O sistema deve permitir que o jogador controle o movimento do personagem (frente, trás, pulo). |
+| **RF02** | O jogador deve ser capaz de realizar uma "Trombada" (dash de colisão) para quebrar obstáculos. |
+| **RF03** | O jogo deve possuir um sistema de inventário para armazenar itens e artefatos coletados. |
+| **RF04** | O sistema deve gerenciar a barra de vida e energia do personagem. |
+| **RF05** | O jogo deve salvar o progresso automaticamente em checkpoints. |
+| **RF06** | Deve haver um sistema de diálogo com NPCs (Personagens não jogáveis). |
+
+---
+
+## 3. Requisitos Não Funcionais (RNF)
+Os requisitos não funcionais descrevem como o sistema deve funcionar (qualidade).
+
+| ID | Descrição |
+| :--- | :--- |
+| **RNF01** | **Desempenho:** O jogo deve rodar a no mínimo 60 FPS em hardware recomendado. |
+| **RNF02** | **Usabilidade:** A interface deve ser intuitiva, permitindo iniciar o jogo em menos de 3 cliques. |
+| **RNF03** | **Portabilidade:** O código base deve ser compatível com Windows e Android. |
+| **RNF04** | **Tempo de Carregamento:** O carregamento inicial de fases não deve exceder 10 segundos. |
+
+---
+
+## 4. Casos de Uso
+### UC01: Coletar Artefato
+* **Ator:** Jogador.
+* **Fluxo Principal:**
+    1. O jogador se aproxima de um objeto brilhante.
+    2. O jogador pressiona a tecla de interação.
+    3. O sistema valida se há espaço no inventário.
+    4. O item é adicionado e uma notificação aparece na tela.
+
+### UC02: Realizar Trombada em Parede Quebrável
+* **Ator:** Jogador.
+* **Fluxo Principal:**
+    1. O jogador identifica uma parede com rachaduras.
+    2. O jogador carrega a habilidade de impacto.
+    3. O jogador colide com a parede.
+    4. O sistema calcula a física e remove o obstáculo.
+
+---
+
